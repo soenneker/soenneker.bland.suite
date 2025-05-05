@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Bland.Suite
+﻿# Contributing to Soenneker.Bland.Suite
 
 We're excited that you're interested in contributing!
 
