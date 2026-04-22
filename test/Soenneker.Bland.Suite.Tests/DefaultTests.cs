@@ -1,18 +1,17 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 
 namespace Soenneker.Bland.Suite.Tests;
 
-[Collection("Collection")]
-public class DefaultTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class DefaultTests : HostedUnitTest
 {
 
-    public DefaultTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public DefaultTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
