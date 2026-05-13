@@ -44,6 +44,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Bland.Calls" Version="4.0.1598" />
+        <PackageReference Include="Soenneker.Bland.Calls" Version="4.0.1599" />
     </ItemGroup>
 </Project>
