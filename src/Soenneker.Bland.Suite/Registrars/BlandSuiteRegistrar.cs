@@ -8,6 +8,11 @@ namespace Soenneker.Bland.Suite.Registrars;
 /// </summary>
 public static class BlandSuiteRegistrar
 {
+    /// <summary>
+    /// Adds bland suite as singleton.
+    /// </summary>
+    /// <param name="services">The service collection.</param>
+    /// <returns>The result of the operation.</returns>
     public static IServiceCollection AddBlandSuiteAsSingleton(this IServiceCollection services)
     {
         services.AddBlandCallUtilAsSingleton();
@@ -15,6 +20,11 @@ public static class BlandSuiteRegistrar
         return services;
     }
 
+    /// <summary>
+    /// Adds bland suite as scoped.
+    /// </summary>
+    /// <param name="services">The service collection.</param>
+    /// <returns>The result of the operation.</returns>
     public static IServiceCollection AddBlandSuiteAsScoped(this IServiceCollection services)
     {
         services.AddBlandCallUtilAsScoped();
